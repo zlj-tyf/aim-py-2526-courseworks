@@ -110,7 +110,8 @@ class Grid():
         '''
         self.position_history[step] = self.current_pos
 
-    def get_position_at_step(self, step: int) -> Optional[Tuple[int, int]]:  # type: ignore
+    # type: ignore
+    def get_position_at_step(self, step: int) -> Optional[Tuple[int, int]]:
         '''
         从 position_history 字典中获取指定步数的坐标
         如果该步数不存在，返回 None
@@ -141,6 +142,8 @@ class Grid():
 
 """
 # TODO: Question 6
+
+
 class AdvancedGrid(Grid):
     """AdvancedGrid extends Grid with step counting and Manhattan distance.
 
